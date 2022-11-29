@@ -1,0 +1,26 @@
+CFLAGS=--target atari --add-source -Oi
+AFLAGS=--target atari
+LDFLAGS=--target atari -v
+OBJS=target/action.o target/object.o target/perform.o target/room.o \
+     target/game.o target/input.o target/output.o
+
+all: target potion.prg
+#	ls -o potion.prg
+
+target:
+	mkdir target
+
+potion.prg: target/potion.bin
+#	pucrunch -fshort -c64 -m5 target/potion.bin potion.prg
+	cp target/potion.bin potion.xex
+
+target/potion.bin: $(OBJS)
+	ld65 -o target/potion.bin $(LDFLAGS) -Ln target/potion.labels $(OBJS) atari.lib
+
+target/%.o: target/%.s
+	ca65 $(AFLAGS) -o $@ $<
+
+target/%.s: %.c
+	cc65 $(CFLAGS) -o $@ $<
+
+.PHONY: all

@@ -1,0 +1,36 @@
+La Pócima
+==========
+
+
+Instrucciones del juego
+-----------------
+
+Consulte el archivo potion.txt para obtener instrucciones.
+
+
+Compilación:
+------------
+
+
+El programa ha sido compilado para tres configuraciones:
+
+* linux
+
+Esto debería basarse en cualquier instalación sana de Linux con GCC. debería construir
+en la mayoría de las plataformas con GCC, pero solo ha sido probado en Linux. Ejecutar "hacer
+local" para compilar el binario de Linux.
+
+* Comodore 64
+* Comodore 64 4K
+
+Estas plataformas requieren cc65 <URL:http://www.cc65.org/> para compilar el
+objetivo binario y pucrunch <URL:http://www.cs.tut.fi/~albert/Dev/pucrunch/>
+para comprimir el binario resultante. El objetivo normal utiliza el largo
+descripciones como en la versión de Linux, el objetivo pequeño usa
+descripciones y algunos algoritmos optimizados (principalmente ensamblaje en línea) para
+reducir el tamaño para ajustarse al requisito de 4K para el minijuego de 2003
+competencia. Ejecute "make c64" para construir el objetivo C64 regular y "make
+c64small" para construir el objetivo C64 4K.
+Más información sobre este texto de origenPara obtener más información sobre la traducción, se necesita el texto de origen
+Enviar comentarios
+Paneles laterales

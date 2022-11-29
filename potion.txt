@@ -1,0 +1,52 @@
+La Pócima
+==========
+
+Copyright (C) 2022 Andrés Giménez Perales
+
+Argumento
+----------
+
+Estás con tus movidas, cuando de repente te encuentras
+transportado al medio de un bosque oscuro en una tierra lejana. No tienes
+idea de lo que estás haciendo aquí o cómo salir, es tu tarea averiguarlo.
+
+Instrucciones
+------------
+
+Este es un juego de aventura de texto simple. Acepta comandos en la forma "verbo
+sustantivo", por ejemplo: "tomar llave". A continuación se proporciona una lista completa de comandos. Su
+El primer objeto del juego es descubrir cuál es el objeto del juego,
+luego para llevar a cabo la tarea que se le ha presentado.
+
+El juego reconoce estos comandos de una sola palabra:
+
+ * "n", "s", "e", "o": Movimiento direccional.
+ * "i": Mostrar inventario.
+ * "mirar": Mostrar descripción de la habitación.
+ * "salir": Salir del juego.
+ * "licencia": Muestra los términos de la licencia (no en la versión 4k).
+
+El juego reconoce estos verbos, que deben usarse con un sustantivo:
+
+ "tomar", "recoger", "levantar", "leer", "hablar con", "desbloquear", "abrir", "girar",
+ "golpear", "puñetazo", "patada", "matar", "verter", "vaciar", "beber", "lanzar",
+ "mirar", "examinar", "soltar".
+
+Licencia
+-------
+
+Este programa es de uso gratuito, es un fork - traducción del juego "The Potion" Copyright (C) 2002-2003 Peter Karlsson <peter@softwolves.pp.se>
+A Softwolves Software Release in 2003 <URL:http://www.softwolves.pp.se/cbm/> Distribuido bajo licencia GNU.
+
+La presente versíon hereda la licencia GNU de su predecesor
+
+Copyright (C) 2022 Andrés Giménez Perales
+
+Versiones
+--------
+
+Versión 1.0 - 2003-06-28:
+* Versión inicial.
+
+
+
